@@ -7,3 +7,8 @@ console.log(paragraph);
 
 mainTitle.textContent = 'DOM Manipulation with JavaScript';
 paragraph.textContent = 'Hello, I am Andres and I am learning DOM manipulation!';
+
+const newItem = document.createElement('li');
+newItem.textContent = 'Newly added item';
+const itemList = document.getElementById('item-list');
+itemList.appendChild(newItem);
