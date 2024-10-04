@@ -12,3 +12,15 @@ const newItem = document.createElement('li');
 newItem.textContent = 'Newly added item';
 const itemList = document.getElementById('item-list');
 itemList.appendChild(newItem);
+
+const addItemBtn = document.getElementById('add-item-btn');
+addItemBtn.addEventListener('click', function() {
+    const newItem = document.createElement('li');
+    newItem.textContent = 'another new item';
+    itemList.appendChild(newItem);
+});
+
+const highlightTitleBtn = document.getElementById('highlight-title-btn');
+highlightTitleBtn.addEventListener('click', function() {
+    mainTitle.classList.toggle('highlight');
+});
